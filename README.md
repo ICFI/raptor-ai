@@ -72,5 +72,5 @@ An alternate method to invoke the results are using a CURL call:
   
 ## Deployment and usage
 
-The reccomendation is to invoke the REST API layer available within DIGITS or expose it thru a microservice layer with any additional abstraction that is needed.
+The reccomendation is to invoke the REST API layer available within DIGITS or expose it thru a microservice layer with any additional abstraction that is needed.  If the microservice approach is utilized, it is reccomended to download neccessary depdencies and utilize a DevOps CI pipeline for deployment/integration. This way a centralized model catalog can also be maintained.
 
