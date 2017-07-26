@@ -45,6 +45,7 @@ Step 1. Import the outputs from the data preparation into the GPU instance
 Step 2. Partition the data set into 70/20/10
 
 Step 3. Open the DIGITS interface to setup a job that will perform the training and validation of data.
-![alt text](https://github.com/ICFI/raptor-ai/blob/master/Capture3.png "Logo Title Text 1")
+
+![alt text](https://github.com/ICFI/raptor-ai/blob/master/Capture3.PNG "Logo Title Text 1")
 
 The training/validation process should take about 10minutes using the DIGITS GPU environment.  If it takes more time, please check the settings to ensure that it is not using the CPUs to setup the data set.
