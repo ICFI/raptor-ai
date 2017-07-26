@@ -64,3 +64,7 @@ Step 1. Select the model that has been created in the DIGITS platform. Scrolling
 
 Step 2. Lastly provide the data that needs to be tested for.  Once the 'Test' button is clicked the model tries to provide results with accuracy percentages against the various entities identified.
 
+An alternate method to invoke the results are using a CURL call:
+
+ CURL <DIGITS_IP>/models/../infer_db,josn -XPOST -F jobs_id=<jobID> -F db_path="path to test data" > predictions.txt
+
