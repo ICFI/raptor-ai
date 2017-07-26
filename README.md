@@ -40,12 +40,25 @@ a.	The setup includes -  CUDA, CUDnn, DIGITS, Caffe and Torch.  Please follow th
 b.	Open a browser session and check if the DIGITS interface is available.  http://<ipAddress> 
 
 ## Data setup steps
-Step 1. Import the outputs from the data preparation into the GPU instance
+Step 1. Import the outputs from the data preparation into the GPU instance.  Utilize an SFTP or SCP to transfer the data to the Ubuntu instance where DIGITS is installed.
 
-Step 2. Partition the data set into 70/20/10
+Step 2. Partition the data set into 70/20/10, where 70% is meant for training, 20% is meant for validation and rest 10% is meant for testing purpose.  Split the files accordingly.
 
-Step 3. Open the DIGITS interface to setup a job that will perform the training and validation of data.
+Step 3. Open the DIGITS interface to setup a job that will perform the training and validation of data.  Choose the location of the files for the training and validation columns. Lastly set the "Number of characters per sample" to the max length in the second column.
 
 ![alt text](https://github.com/ICFI/raptor-ai/blob/master/DIGITS_data_prep.PNG "Logo Title Text 1")
 
-The training/validation process should take about 10minutes using the DIGITS GPU environment.  If it takes more time, please check the settings to ensure that it is not using the CPUs to setup the data set.
+
+## Model creation steps
+
+
+Step 1. Select the data set that has been trained. ChooseSGD(Stochastic Gradient Descent) for thes solver type.
+
+Step 2. Select the framework that should be used.  Caffe or Torch are the two options.  Provide a name for the new model and hit create.  Caffe utilizes a CNN(Convolutional Neural Network) to classify the data.
+
+The classification process utilizes the GPU environment. At the end it will provide the accuracy/loss for the data.
+
+## Testing steps
+
+Step 1. Select the model that has been created in the DIGITS platform. Scrolling below will provide options to perform a quick test.  Select the model from the drop down (Epoch 30), select a visualization meethod.  Lastly provide the data that needs to be tested for.  Once the 'Test' button is clicked the model tries to provide
+
