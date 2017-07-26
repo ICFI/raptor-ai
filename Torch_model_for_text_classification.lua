@@ -1,3 +1,4 @@
+-- check if neccessary dependencies are available
 assert(pcall(function() require('dpnn') end), 'dpnn module required: luarocks install dpnn')
 
 -- return function that returns network definition
