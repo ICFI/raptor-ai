@@ -37,7 +37,7 @@ Step 2. Install the NVIDIA DIGITS platform along with supporting packages on Ubu
 
 a.	The setup includes -  CUDA, CUDnn, DIGITS, Caffe and Torch.  Please follow the instructions at: [DIGITS Install](https://github.com/NVIDIA/DIGITS/blob/master/docs/UbuntuInstall.md).
 
-b.	Open a browser session and check if the DIGITS interface is available at http://<<ipAddress>> .
+b.	Open a browser session and check if the DIGITS interface is available at http://<< ipAddress >> .
 
 ## Data setup steps
 Step 1. Import the outputs from the data preparation into the GPU instance.  Utilize an SFTP or SCP to transfer the data to the Ubuntu instance where DIGITS is installed.
