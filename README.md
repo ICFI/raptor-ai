@@ -58,7 +58,7 @@ Step 2. Select the framework that should be used.  Caffe or Torch are the two op
 
 The classification process utilizes the GPU environment. At the end it will provide the accuracy/loss for the data which looks similar to the following graph.
 
-
+![alt text](https://github.com/ICFI/raptor-ai/blob/master/DIGITS_Text_Classification_Model_Ouput.png "Logo Title Text 1")
 
 ## Testing steps
 
