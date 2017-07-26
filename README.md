@@ -60,5 +60,7 @@ The classification process utilizes the GPU environment. At the end it will prov
 
 ## Testing steps
 
-Step 1. Select the model that has been created in the DIGITS platform. Scrolling below will provide options to perform a quick test.  Select the model from the drop down (Epoch 30), select a visualization meethod.  Lastly provide the data that needs to be tested for.  Once the 'Test' button is clicked the model tries to provide
+Step 1. Select the model that has been created in the DIGITS platform. Scrolling below will provide options to perform a quick test.  Select the model from the drop down (Epoch 30), select a visualization meethod.  
+
+Step 2. Lastly provide the data that needs to be tested for.  Once the 'Test' button is clicked the model tries to provide results with accuracy percentages against the various entities identified.
 
