@@ -68,5 +68,9 @@ Step 2. Lastly provide the data that needs to be tested for.  Once the 'Test' bu
 
 An alternate method to invoke the results are using a CURL call:
 
- CURL <DIGITS_IP>/models/../infer_db,josn -XPOST -F jobs_id=<jobID> -F db_path="path to test data" > predictions.txt
+ CURL http://<< DIGITS_IP >>/models/../model_setting_file.json -XPOST -F jobs_id=<jobID of previously trained model> -F db_path="path to test data" > predictions.txt
+  
+## Deployment and usage
+
+The reccomendation is to invoke the REST API layer available within DIGITS or expose it thru a microservice layer with any additional abstraction that is needed.
 
