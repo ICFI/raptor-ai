@@ -52,11 +52,13 @@ Step 3. Open the DIGITS interface to setup a job that will perform the training 
 ## Model creation steps
 
 
-Step 1. Select the data set that has been trained. ChooseSGD(Stochastic Gradient Descent) for thes solver type.
+Step 1. Select the data set that has been trained. ChooseSGD(Stochastic Gradient Descent) for the solver type.
 
 Step 2. Select the framework that should be used.  Caffe or Torch are the two options.  Provide a name for the new model and hit create.  Caffe utilizes a CNN(Convolutional Neural Network) to classify the data.
 
-The classification process utilizes the GPU environment. At the end it will provide the accuracy/loss for the data.
+The classification process utilizes the GPU environment. At the end it will provide the accuracy/loss for the data which looks similar to the following graph.
+
+
 
 ## Testing steps
 
