@@ -10,7 +10,7 @@ Step 2. Deploy the ETL job that is intended to prepare the data.
 
   Snapshot of google Wiki-links data
   
-  ![alt text](https://github.com/ICFI/raptor-ai/blob/master/Capture1.PNG "Logo Title Text 1")
+  ![alt text](https://github.com/ICFI/raptor-ai/blob/master/wikilinks_data_snapshot.PNG "Logo Title Text 1")
 
 
 Snapshot of data after transformation
@@ -19,7 +19,7 @@ Snapshot of data after transformation
 
 b.	Find below the data prep job snapshot.  The job is built on an open source ETL tool – Talend 6.x.  For more info please visit the Talend Data Integration page 
 
-  ![alt text](https://github.com/ICFI/raptor-ai/blob/master/Capture2.png "Logo Title Text 1")
+  ![alt text](https://github.com/ICFI/raptor-ai/blob/master/data_prep_job_snapshot.png "Logo Title Text 1")
   
 c.	Deploying the job for execution: 
 *	Pre-requisites: Windows 7 and above, Java JRE 8.x, enough space to house the raw data files and cleansed files.
@@ -46,6 +46,6 @@ Step 2. Partition the data set into 70/20/10
 
 Step 3. Open the DIGITS interface to setup a job that will perform the training and validation of data.
 
-![alt text](https://github.com/ICFI/raptor-ai/blob/master/Capture3.PNG "Logo Title Text 1")
+![alt text](https://github.com/ICFI/raptor-ai/blob/master/DIGITS_data_prep.PNG "Logo Title Text 1")
 
 The training/validation process should take about 10minutes using the DIGITS GPU environment.  If it takes more time, please check the settings to ensure that it is not using the CPUs to setup the data set.
